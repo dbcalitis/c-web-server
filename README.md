@@ -18,19 +18,6 @@
 - [ ] concurrency (optional for MVP)
   - [ ] basic thread-per-connection model or select()
 
-## portfolio-specific features
-- [ ] routes
-  - [X] `/` – homepage
-  - [ ] `/projects` – portfolio section
-  - [ ] `/about` – bio/contact info
-- [ ] static assets
-  - [X] serve CSS stylesheets
-  - [X] serve images (e.g., project screenshots)
-  - [X] serve JS (optional, e.g., lightbox, nav toggle)
-- [ ] simple templating (optional)
-  - [ ] inject dynamic content like project list
-  - [ ] allow for lightweight reusable HTML layouts
-
 ## development tools
 - [ ] configuration
   - [ ] set server port and root directory via config file or CLI arg
@@ -44,15 +31,5 @@
 - [ ] simple security
   - [ ] limit request size
   - [ ] avoid directory traversal (`../`)
-
-## polish for portfolio
-- [X] build clean and minimal HTML/CSS design
-- [ ] write README:
-  - [ ] explain architecture
-  - [ ] how to build and run
-- [ ] create deploy script or instructions 
-- [ ] optional extras:
-  - [ ] favicon.ico
-  - [ ] basic analytics (log request counts)
 
 
