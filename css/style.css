@@ -1,0 +1,164 @@
+* {
+  font-family: monospace;
+  color: white;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+body {
+  color: white;
+  background-color: #0d1b2a; /* Dark blue background */
+  background-image: radial-gradient(#1b263b 10%, transparent 10%);
+  background-size: 40px 40px;
+  background-position: 0 0;
+  animation: scroll-anim 5s linear infinite;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes scroll-anim {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 80px 80px;
+  }
+}
+
+.textbox {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  width: 30%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.project {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.project p {
+  padding: 20px;
+}
+
+.post-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.posts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  padding: 3rem;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#clouds {
+  border: solid 5px white;
+  filter: brightness(70%) sepia(40%);
+  height: 15%;
+  width: 35%;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* https://codepen.io/onurhandtr0/pen/ZEQpYOd */
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  color: white;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10;
+  width: 0%;
+  background-color: white;
+  height: 2px;
+  transition: 300ms all;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.markdown-post {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.markdown-post h1, .markdown-post h2 {
+  border-bottom: 1px solid #ccc;
+}
+
